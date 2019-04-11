@@ -1,0 +1,30 @@
+object FrmPY: TFrmPY
+  Left = 366
+  Height = 241
+  Top = 281
+  Width = 473
+  Caption = 'Категории населения'
+  ClientHeight = 241
+  ClientWidth = 473
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '0.9.30.3'
+  object ListBox1: TListBox
+    Left = 8
+    Height = 190
+    Top = 14
+    Width = 457
+    ItemHeight = 0
+    OnClick = ListBox1Click
+    TabOrder = 0
+  end
+  object Dzap: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    DataSource = FrmKuch.Datasource1
+    left = 24
+    top = 212
+  end
+end

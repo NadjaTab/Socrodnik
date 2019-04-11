@@ -1,0 +1,1504 @@
+object FrmKuch: TFrmKuch
+  Left = 259
+  Height = 636
+  Top = 192
+  Width = 788
+  Caption = 'Карточка учета'
+  ClientHeight = 616
+  ClientWidth = 788
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.0.10.0'
+  object PageControl1: TPageControl
+    Left = 16
+    Height = 569
+    Top = 16
+    Width = 748
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 0
+    OnChange = PageControl1Change
+    object TabSheet1: TTabSheet
+      Caption = 'Основное'
+      ClientHeight = 541
+      ClientWidth = 740
+      object Label1: TLabel
+        Left = 8
+        Height = 14
+        Top = 2
+        Width = 58
+        Caption = 'Фамилия'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label2: TLabel
+        Left = 8
+        Height = 14
+        Top = 50
+        Width = 27
+        Caption = 'Имя'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 124
+        Height = 14
+        Top = 50
+        Width = 57
+        Caption = 'Отчество'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 260
+        Height = 16
+        Top = 5
+        Width = 42
+        Caption = 'Номер:'
+        ParentColor = False
+      end
+      object Label5: TLabel
+        Left = 316
+        Height = 16
+        Top = 5
+        Width = 35
+        Caption = 'Label5'
+        Font.Color = clMaroon
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label6: TLabel
+        Left = 260
+        Height = 16
+        Top = 26
+        Width = 18
+        Caption = 'От:'
+        ParentColor = False
+      end
+      object Label7: TLabel
+        Left = 412
+        Height = 16
+        Top = 5
+        Width = 130
+        Caption = 'Социальный работник:'
+        ParentColor = False
+      end
+      object Label8: TLabel
+        Left = 476
+        Height = 14
+        Top = 34
+        Width = 33
+        Caption = 'Label8'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clPurple
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label9: TLabel
+        Left = 260
+        Height = 16
+        Top = 53
+        Width = 24
+        Caption = 'Пол'
+        ParentColor = False
+      end
+      object Label10: TLabel
+        Left = 316
+        Height = 16
+        Top = 53
+        Width = 84
+        Caption = 'Дата рождения'
+        ParentColor = False
+      end
+      object Label11: TLabel
+        Left = 420
+        Height = 16
+        Top = 53
+        Width = 74
+        Caption = 'Оплата услуг'
+        ParentColor = False
+      end
+      object Label21: TLabel
+        Left = 8
+        Height = 16
+        Top = 447
+        Width = 88
+        Caption = 'Кем направлен:'
+        ParentColor = False
+        Visible = False
+      end
+      object Edit2: TEdit
+        Left = 8
+        Height = 21
+        Top = 70
+        Width = 103
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 2
+        Text = 'Edit2'
+      end
+      object Edit3: TEdit
+        Left = 124
+        Height = 21
+        Top = 70
+        Width = 120
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 3
+        Text = 'Edit3'
+      end
+      object DateEdit1: TDateEdit
+        Left = 284
+        Height = 21
+        Top = 26
+        Width = 72
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        OKCaption = 'OK'
+        CancelCaption = 'Cancel'
+        DateOrder = doNone
+        ButtonWidth = 23
+        CharCase = ecNormal
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D69E
+          72C4D3996EF4D19668FFCE9263FFCB8E5EFFC98A5BFFC78756FFC38452FFC384
+          52FFC38452FFC38452FFC38452FFC38452FFBB7742B0FFFFFF00FFFFFF00D7A1
+          75FFF8F2EDFFF7F0EAFFF6EDE6FFF4EAE2FFF3E7DEFFF1E4DBFFF0E2D8FFEAD6
+          C8FFF2E5DCFFFAF4F1FFF9F3F0FFFAF5F2FFC58A5DFDFFFFFF00FFFFFF00D9A4
+          7AFFF9F3EEFFEBD2BEFFFFFFFFFFEBD3BFFFFFFFFFFFEBD3C0FFFFFFFFFFEAC7
+          ADFFECD9CDFFF1E4DBFFF9F3F0FFF9F2EFFFC68C5FFFFFFFFF00FFFFFF00DDA8
+          7EFFF9F3EFFFEBD0BAFFEBD0BBFF75B57AFF75B57AFF75B57AFFEBD1BDFFEACD
+          B5FFFAF4F0FFEBD9CCFFF1E4DBFFFAF4F1FFC68A5CFFFFFFFF00FFFFFF00DFAA
+          82FFF9F3EFFFEACEB7FFFFFFFFFF75B57AFF94D49BFF74B579FFFFFFFFFFEACF
+          BAFFFBF6F2FFFAF3F0FFEBD8CBFFF2E6DDFFC88D5FFFFFFFFF00FFFFFF00E1AE
+          87FFFAF4F0FFEACBB2FFEACCB3FF75B57AFF74B579FF73B478FFEACEB7FF70B3
+          75FF6FB274FF6EB172FFE8C8AEFFEAD7C9FFC48654FFFFFFFF00FFFFFF00E3B1
+          8CFFFAF6F1FFEAC9AEFFFFFFFFFFEAC9B0FFFFFFFFFFE9CBB3FFFFFFFFFF6FB1
+          73FF8ED295FF6BAF6FFFFFFFFFFFF1E5DBFFC68655FFFFFFFF00FFFFFF00E5B4
+          8FFFFAF6F2FFE9C6AAFFE9C6ACFFEAC7ACFFE9C7ADFFE9C9AEFFE9C9B0FF6CB0
+          71FF6AAF6EFF68AD6DFFE8CCB5FFF2E7DEFFC88A59FFFFFFFF00FFFFFF00E7B7
+          94FFFBF7F4FFE9C3A6FFFFFFFFFFE8C4A9FFFFFFFFFFE9C6AAFFFFFFFFFFE8C7
+          ACFFFFFFFFFFE8C8B0FFFFFFFFFFF7F1EBFFCB8F5FFFFFFFFF00FFFFFF00E9BA
+          98FFFBF7F4FF65A4FFFF64A3FFFF62A2FFFF61A1FFFF5F9FFFFF5C9DFFFF5A9A
+          FFFF5798FFFF5495FFFF5294FFFFFBF7F4FFCE9364FFFFFFFF00FFFFFF00EBBD
+          9BFFFBF7F4FF64A4FFFF79BDFFFF75BBFFFF71B9FFFF6DB8FFFF68B3FFFF61B0
+          FFFF5AABFFFF54A7FFFF3B7DFFFFFBF7F4FFD1976AFFFFFFFF00FFFFFF00ECBF
+          9EFFFBF7F4FF65A4FFFF64A3FFFF60A0FFFF5D9EFFFF5899FFFF5496FFFF4D90
+          FFFF478BFFFF4284FFFF3D7FFFFFFBF7F4FFD49B6FFFFFFFFF00FFFFFF00EEC1
+          A1EBFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7
+          F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFD7A074F8FFFFFF00FFFFFF00EFC2
+          A37EEFC1A2E3EDC09FFFEBBE9DFFEBBC9AFFE9BA96FFE7B793FFE6B590FFE4B2
+          8CFFE2AF88FFE0AC84FFDDA980FFDCA57DFFDAA37ACAFFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+        }
+        NumGlyphs = 0
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 4
+      end
+      object ComboBox1: TComboBox
+        Left = 542
+        Height = 21
+        Top = 5
+        Width = 163
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ItemHeight = 13
+        ParentFont = False
+        TabOrder = 0
+        Text = 'ComboBox1'
+      end
+      object Button1: TButton
+        Left = 388
+        Height = 23
+        Top = 26
+        Width = 80
+        Caption = 'Категория'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object ComboBox2: TComboBox
+        Left = 260
+        Height = 21
+        Top = 70
+        Width = 48
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ItemHeight = 13
+        ParentFont = False
+        TabOrder = 6
+        Text = 'ComboBox2'
+      end
+      object DateEdit2: TDateEdit
+        Left = 313
+        Height = 21
+        Top = 70
+        Width = 75
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        OKCaption = 'OK'
+        CancelCaption = 'Cancel'
+        DateOrder = doNone
+        ButtonWidth = 23
+        CharCase = ecNormal
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D69E
+          72C4D3996EF4D19668FFCE9263FFCB8E5EFFC98A5BFFC78756FFC38452FFC384
+          52FFC38452FFC38452FFC38452FFC38452FFBB7742B0FFFFFF00FFFFFF00D7A1
+          75FFF8F2EDFFF7F0EAFFF6EDE6FFF4EAE2FFF3E7DEFFF1E4DBFFF0E2D8FFEAD6
+          C8FFF2E5DCFFFAF4F1FFF9F3F0FFFAF5F2FFC58A5DFDFFFFFF00FFFFFF00D9A4
+          7AFFF9F3EEFFEBD2BEFFFFFFFFFFEBD3BFFFFFFFFFFFEBD3C0FFFFFFFFFFEAC7
+          ADFFECD9CDFFF1E4DBFFF9F3F0FFF9F2EFFFC68C5FFFFFFFFF00FFFFFF00DDA8
+          7EFFF9F3EFFFEBD0BAFFEBD0BBFF75B57AFF75B57AFF75B57AFFEBD1BDFFEACD
+          B5FFFAF4F0FFEBD9CCFFF1E4DBFFFAF4F1FFC68A5CFFFFFFFF00FFFFFF00DFAA
+          82FFF9F3EFFFEACEB7FFFFFFFFFF75B57AFF94D49BFF74B579FFFFFFFFFFEACF
+          BAFFFBF6F2FFFAF3F0FFEBD8CBFFF2E6DDFFC88D5FFFFFFFFF00FFFFFF00E1AE
+          87FFFAF4F0FFEACBB2FFEACCB3FF75B57AFF74B579FF73B478FFEACEB7FF70B3
+          75FF6FB274FF6EB172FFE8C8AEFFEAD7C9FFC48654FFFFFFFF00FFFFFF00E3B1
+          8CFFFAF6F1FFEAC9AEFFFFFFFFFFEAC9B0FFFFFFFFFFE9CBB3FFFFFFFFFF6FB1
+          73FF8ED295FF6BAF6FFFFFFFFFFFF1E5DBFFC68655FFFFFFFF00FFFFFF00E5B4
+          8FFFFAF6F2FFE9C6AAFFE9C6ACFFEAC7ACFFE9C7ADFFE9C9AEFFE9C9B0FF6CB0
+          71FF6AAF6EFF68AD6DFFE8CCB5FFF2E7DEFFC88A59FFFFFFFF00FFFFFF00E7B7
+          94FFFBF7F4FFE9C3A6FFFFFFFFFFE8C4A9FFFFFFFFFFE9C6AAFFFFFFFFFFE8C7
+          ACFFFFFFFFFFE8C8B0FFFFFFFFFFF7F1EBFFCB8F5FFFFFFFFF00FFFFFF00E9BA
+          98FFFBF7F4FF65A4FFFF64A3FFFF62A2FFFF61A1FFFF5F9FFFFF5C9DFFFF5A9A
+          FFFF5798FFFF5495FFFF5294FFFFFBF7F4FFCE9364FFFFFFFF00FFFFFF00EBBD
+          9BFFFBF7F4FF64A4FFFF79BDFFFF75BBFFFF71B9FFFF6DB8FFFF68B3FFFF61B0
+          FFFF5AABFFFF54A7FFFF3B7DFFFFFBF7F4FFD1976AFFFFFFFF00FFFFFF00ECBF
+          9EFFFBF7F4FF65A4FFFF64A3FFFF60A0FFFF5D9EFFFF5899FFFF5496FFFF4D90
+          FFFF478BFFFF4284FFFF3D7FFFFFFBF7F4FFD49B6FFFFFFFFF00FFFFFF00EEC1
+          A1EBFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7
+          F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFD7A074F8FFFFFF00FFFFFF00EFC2
+          A37EEFC1A2E3EDC09FFFEBBE9DFFEBBC9AFFE9BA96FFE7B793FFE6B590FFE4B2
+          8CFFE2AF88FFE0AC84FFDDA980FFDCA57DFFDAA37ACAFFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+        }
+        NumGlyphs = 0
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        MaxLength = 10
+        ParentFont = False
+        TabOrder = 7
+      end
+      object ComboBox3: TComboBox
+        Left = 420
+        Height = 21
+        Top = 71
+        Width = 96
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ItemHeight = 13
+        ParentFont = False
+        TabOrder = 8
+        Text = 'ComboBox3'
+      end
+      object GroupBox1: TGroupBox
+        Left = 8
+        Height = 155
+        Top = 111
+        Width = 348
+        Caption = 'Место рождения:'
+        ClientHeight = 137
+        ClientWidth = 344
+        TabOrder = 10
+        object Label12: TLabel
+          Left = 7
+          Height = 16
+          Top = 3
+          Width = 152
+          Caption = 'Край, область, республика:'
+          ParentColor = False
+        end
+        object Label13: TLabel
+          Left = 7
+          Height = 16
+          Top = 43
+          Width = 38
+          Caption = 'Район:'
+          ParentColor = False
+        end
+        object Label14: TLabel
+          Left = 6
+          Height = 16
+          Top = 90
+          Width = 108
+          Caption = 'Населенный пункт:'
+          ParentColor = False
+        end
+        object Edit4: TEdit
+          Left = 6
+          Height = 21
+          Top = 19
+          Width = 324
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 0
+          Text = 'Edit4'
+        end
+        object Edit5: TEdit
+          Left = 6
+          Height = 21
+          Top = 60
+          Width = 324
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 1
+          Text = 'Edit5'
+        end
+        object Edit6: TEdit
+          Left = 6
+          Height = 21
+          Top = 106
+          Width = 324
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 2
+          Text = 'Edit6'
+        end
+      end
+      object GroupBox2: TGroupBox
+        Left = 8
+        Height = 166
+        Top = 276
+        Width = 348
+        Caption = 'Документ, удостоверяющий личность:'
+        ClientHeight = 148
+        ClientWidth = 344
+        ParentColor = False
+        TabOrder = 11
+        object Label15: TLabel
+          Left = 10
+          Height = 16
+          Top = 6
+          Width = 86
+          Caption = 'Тип документа:'
+          ParentColor = False
+        end
+        object Label16: TLabel
+          Left = 202
+          Height = 16
+          Top = 8
+          Width = 38
+          Caption = 'Серия:'
+          ParentColor = False
+        end
+        object Label17: TLabel
+          Left = 274
+          Height = 16
+          Top = 8
+          Width = 42
+          Caption = 'Номер:'
+          ParentColor = False
+        end
+        object Label18: TLabel
+          Left = 170
+          Height = 16
+          Top = 92
+          Width = 110
+          Caption = 'Код подразделения:'
+          ParentColor = False
+        end
+        object Label19: TLabel
+          Left = 10
+          Height = 16
+          Top = 46
+          Width = 39
+          Caption = 'Выдан:'
+          ParentColor = False
+        end
+        object Label20: TLabel
+          Left = 7
+          Height = 16
+          Top = 126
+          Width = 190
+          Caption = '№ страхового свидетельства ПФР:'
+          ParentColor = False
+        end
+        object ComboBox4: TComboBox
+          Left = 7
+          Height = 21
+          Top = 22
+          Width = 187
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ItemHeight = 13
+          ParentFont = False
+          TabOrder = 0
+          Text = 'ComboBox4'
+        end
+        object Edit7: TEdit
+          Left = 202
+          Height = 21
+          Top = 22
+          Width = 58
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 1
+          Text = 'Edit7'
+        end
+        object Edit8: TEdit
+          Left = 274
+          Height = 21
+          Top = 22
+          Width = 65
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 2
+          Text = 'Edit8'
+        end
+        object DateEdit3: TDateEdit
+          Left = 10
+          Height = 21
+          Top = 92
+          Width = 76
+          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+          OKCaption = 'OK'
+          CancelCaption = 'Cancel'
+          DateOrder = doNone
+          ButtonWidth = 23
+          CharCase = ecNormal
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D69E
+            72C4D3996EF4D19668FFCE9263FFCB8E5EFFC98A5BFFC78756FFC38452FFC384
+            52FFC38452FFC38452FFC38452FFC38452FFBB7742B0FFFFFF00FFFFFF00D7A1
+            75FFF8F2EDFFF7F0EAFFF6EDE6FFF4EAE2FFF3E7DEFFF1E4DBFFF0E2D8FFEAD6
+            C8FFF2E5DCFFFAF4F1FFF9F3F0FFFAF5F2FFC58A5DFDFFFFFF00FFFFFF00D9A4
+            7AFFF9F3EEFFEBD2BEFFFFFFFFFFEBD3BFFFFFFFFFFFEBD3C0FFFFFFFFFFEAC7
+            ADFFECD9CDFFF1E4DBFFF9F3F0FFF9F2EFFFC68C5FFFFFFFFF00FFFFFF00DDA8
+            7EFFF9F3EFFFEBD0BAFFEBD0BBFF75B57AFF75B57AFF75B57AFFEBD1BDFFEACD
+            B5FFFAF4F0FFEBD9CCFFF1E4DBFFFAF4F1FFC68A5CFFFFFFFF00FFFFFF00DFAA
+            82FFF9F3EFFFEACEB7FFFFFFFFFF75B57AFF94D49BFF74B579FFFFFFFFFFEACF
+            BAFFFBF6F2FFFAF3F0FFEBD8CBFFF2E6DDFFC88D5FFFFFFFFF00FFFFFF00E1AE
+            87FFFAF4F0FFEACBB2FFEACCB3FF75B57AFF74B579FF73B478FFEACEB7FF70B3
+            75FF6FB274FF6EB172FFE8C8AEFFEAD7C9FFC48654FFFFFFFF00FFFFFF00E3B1
+            8CFFFAF6F1FFEAC9AEFFFFFFFFFFEAC9B0FFFFFFFFFFE9CBB3FFFFFFFFFF6FB1
+            73FF8ED295FF6BAF6FFFFFFFFFFFF1E5DBFFC68655FFFFFFFF00FFFFFF00E5B4
+            8FFFFAF6F2FFE9C6AAFFE9C6ACFFEAC7ACFFE9C7ADFFE9C9AEFFE9C9B0FF6CB0
+            71FF6AAF6EFF68AD6DFFE8CCB5FFF2E7DEFFC88A59FFFFFFFF00FFFFFF00E7B7
+            94FFFBF7F4FFE9C3A6FFFFFFFFFFE8C4A9FFFFFFFFFFE9C6AAFFFFFFFFFFE8C7
+            ACFFFFFFFFFFE8C8B0FFFFFFFFFFF7F1EBFFCB8F5FFFFFFFFF00FFFFFF00E9BA
+            98FFFBF7F4FF65A4FFFF64A3FFFF62A2FFFF61A1FFFF5F9FFFFF5C9DFFFF5A9A
+            FFFF5798FFFF5495FFFF5294FFFFFBF7F4FFCE9364FFFFFFFF00FFFFFF00EBBD
+            9BFFFBF7F4FF64A4FFFF79BDFFFF75BBFFFF71B9FFFF6DB8FFFF68B3FFFF61B0
+            FFFF5AABFFFF54A7FFFF3B7DFFFFFBF7F4FFD1976AFFFFFFFF00FFFFFF00ECBF
+            9EFFFBF7F4FF65A4FFFF64A3FFFF60A0FFFF5D9EFFFF5899FFFF5496FFFF4D90
+            FFFF478BFFFF4284FFFF3D7FFFFFFBF7F4FFD49B6FFFFFFFFF00FFFFFF00EEC1
+            A1EBFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7
+            F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFD7A074F8FFFFFF00FFFFFF00EFC2
+            A37EEFC1A2E3EDC09FFFEBBE9DFFEBBC9AFFE9BA96FFE7B793FFE6B590FFE4B2
+            8CFFE2AF88FFE0AC84FFDDA980FFDCA57DFFDAA37ACAFFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+          }
+          NumGlyphs = 0
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          MaxLength = 0
+          ParentFont = False
+          TabOrder = 4
+        end
+        object Edit9: TEdit
+          Left = 10
+          Height = 21
+          Top = 62
+          Width = 331
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 3
+          Text = 'Edit9'
+        end
+        object MaskEdit1: TMaskEdit
+          Left = 202
+          Height = 21
+          Top = 118
+          Width = 106
+          CharCase = ecNormal
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          MaxLength = 14
+          ParentFont = False
+          TabOrder = 6
+          EditMask = '###-###-### ##'
+          Text = '   -   -      '
+          SpaceChar = '_'
+        end
+        object MaskEdit2: TMaskEdit
+          Left = 287
+          Height = 21
+          Top = 91
+          Width = 54
+          CharCase = ecNormal
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          MaxLength = 7
+          ParentFont = False
+          TabOrder = 5
+          EditMask = '###-###'
+          Text = '   -   '
+          SpaceChar = '_'
+        end
+      end
+      object Edit11: TEdit
+        Left = 100
+        Height = 21
+        Top = 447
+        Width = 200
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 12
+        Text = 'Edit11'
+        Visible = False
+      end
+      object GroupBox3: TGroupBox
+        Left = 372
+        Height = 259
+        Top = 111
+        Width = 348
+        Caption = 'Место жительства:'
+        ClientHeight = 241
+        ClientWidth = 344
+        TabOrder = 13
+        object Label22: TLabel
+          Left = 7
+          Height = 16
+          Top = 3
+          Width = 152
+          Caption = 'Край, область, республика:'
+          ParentColor = False
+        end
+        object Label23: TLabel
+          Left = 7
+          Height = 16
+          Top = 43
+          Width = 38
+          Caption = 'Район:'
+          ParentColor = False
+        end
+        object Label24: TLabel
+          Left = 100
+          Height = 16
+          Top = 90
+          Width = 108
+          Caption = 'Населенный пункт:'
+          ParentColor = False
+        end
+        object Label25: TLabel
+          Left = 12
+          Height = 16
+          Top = 90
+          Width = 44
+          Caption = 'Индекс:'
+          ParentColor = False
+        end
+        object Label26: TLabel
+          Left = 8
+          Height = 16
+          Top = 131
+          Width = 38
+          Caption = 'Улица:'
+          ParentColor = False
+        end
+        object Label27: TLabel
+          Left = 7
+          Height = 16
+          Top = 157
+          Width = 28
+          Caption = 'Дом:'
+          ParentColor = False
+        end
+        object Label28: TLabel
+          Left = 62
+          Height = 16
+          Top = 157
+          Width = 44
+          Caption = 'Корпус:'
+          ParentColor = False
+        end
+        object Label29: TLabel
+          Left = 124
+          Height = 16
+          Top = 157
+          Width = 55
+          Caption = 'Квартира:'
+          ParentColor = False
+        end
+        object Label30: TLabel
+          Left = 196
+          Height = 16
+          Top = 158
+          Width = 53
+          Caption = 'Телефон:'
+          ParentColor = False
+        end
+        object Label31: TLabel
+          Left = 5
+          Height = 16
+          Top = 200
+          Width = 86
+          Caption = 'Дата прописки:'
+          ParentColor = False
+        end
+        object Label32: TLabel
+          Left = 140
+          Height = 16
+          Top = 200
+          Width = 80
+          Caption = 'Дата выписки:'
+          ParentColor = False
+        end
+        object Edit12: TEdit
+          Left = 7
+          Height = 21
+          Top = 19
+          Width = 237
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 0
+          Text = 'Edit12'
+        end
+        object Button2: TButton
+          Left = 252
+          Height = 26
+          Top = 17
+          Width = 94
+          Caption = 'Из справочника'
+          OnClick = Button2Click
+          TabOrder = 1
+        end
+        object Edit13: TEdit
+          Left = 7
+          Height = 21
+          Top = 61
+          Width = 237
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 2
+          Text = 'Edit13'
+        end
+        object Button3: TButton
+          Left = 252
+          Height = 26
+          Top = 57
+          Width = 94
+          Caption = 'Из справочника'
+          OnClick = Button3Click
+          TabOrder = 3
+        end
+        object Edit15: TEdit
+          Left = 69
+          Height = 21
+          Top = 104
+          Width = 175
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 5
+          Text = 'Edit15'
+        end
+        object Button4: TButton
+          Left = 252
+          Height = 26
+          Top = 99
+          Width = 94
+          Caption = 'Из справочника'
+          OnClick = Button4Click
+          TabOrder = 6
+        end
+        object Edit16: TEdit
+          Left = 47
+          Height = 21
+          Top = 135
+          Width = 194
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 7
+          Text = 'Edit16'
+        end
+        object Button5: TButton
+          Left = 252
+          Height = 26
+          Top = 132
+          Width = 94
+          Caption = 'Из справочника'
+          OnClick = Button5Click
+          TabOrder = 8
+        end
+        object Edit17: TEdit
+          Left = 7
+          Height = 21
+          Top = 173
+          Width = 47
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 9
+          Text = 'Edit17'
+        end
+        object Edit18: TEdit
+          Left = 60
+          Height = 21
+          Top = 173
+          Width = 48
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 10
+          Text = 'Edit18'
+        end
+        object Edit19: TEdit
+          Left = 124
+          Height = 21
+          Top = 173
+          Width = 50
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 11
+          Text = 'Edit19'
+        end
+        object Edit20: TEdit
+          Left = 196
+          Height = 21
+          Top = 173
+          Width = 82
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 12
+          Text = 'Edit20'
+        end
+        object DateEdit5: TDateEdit
+          Left = 142
+          Height = 21
+          Top = 214
+          Width = 71
+          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+          OKCaption = 'OK'
+          CancelCaption = 'Cancel'
+          DateOrder = doNone
+          ButtonWidth = 23
+          CharCase = ecNormal
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D69E
+            72C4D3996EF4D19668FFCE9263FFCB8E5EFFC98A5BFFC78756FFC38452FFC384
+            52FFC38452FFC38452FFC38452FFC38452FFBB7742B0FFFFFF00FFFFFF00D7A1
+            75FFF8F2EDFFF7F0EAFFF6EDE6FFF4EAE2FFF3E7DEFFF1E4DBFFF0E2D8FFEAD6
+            C8FFF2E5DCFFFAF4F1FFF9F3F0FFFAF5F2FFC58A5DFDFFFFFF00FFFFFF00D9A4
+            7AFFF9F3EEFFEBD2BEFFFFFFFFFFEBD3BFFFFFFFFFFFEBD3C0FFFFFFFFFFEAC7
+            ADFFECD9CDFFF1E4DBFFF9F3F0FFF9F2EFFFC68C5FFFFFFFFF00FFFFFF00DDA8
+            7EFFF9F3EFFFEBD0BAFFEBD0BBFF75B57AFF75B57AFF75B57AFFEBD1BDFFEACD
+            B5FFFAF4F0FFEBD9CCFFF1E4DBFFFAF4F1FFC68A5CFFFFFFFF00FFFFFF00DFAA
+            82FFF9F3EFFFEACEB7FFFFFFFFFF75B57AFF94D49BFF74B579FFFFFFFFFFEACF
+            BAFFFBF6F2FFFAF3F0FFEBD8CBFFF2E6DDFFC88D5FFFFFFFFF00FFFFFF00E1AE
+            87FFFAF4F0FFEACBB2FFEACCB3FF75B57AFF74B579FF73B478FFEACEB7FF70B3
+            75FF6FB274FF6EB172FFE8C8AEFFEAD7C9FFC48654FFFFFFFF00FFFFFF00E3B1
+            8CFFFAF6F1FFEAC9AEFFFFFFFFFFEAC9B0FFFFFFFFFFE9CBB3FFFFFFFFFF6FB1
+            73FF8ED295FF6BAF6FFFFFFFFFFFF1E5DBFFC68655FFFFFFFF00FFFFFF00E5B4
+            8FFFFAF6F2FFE9C6AAFFE9C6ACFFEAC7ACFFE9C7ADFFE9C9AEFFE9C9B0FF6CB0
+            71FF6AAF6EFF68AD6DFFE8CCB5FFF2E7DEFFC88A59FFFFFFFF00FFFFFF00E7B7
+            94FFFBF7F4FFE9C3A6FFFFFFFFFFE8C4A9FFFFFFFFFFE9C6AAFFFFFFFFFFE8C7
+            ACFFFFFFFFFFE8C8B0FFFFFFFFFFF7F1EBFFCB8F5FFFFFFFFF00FFFFFF00E9BA
+            98FFFBF7F4FF65A4FFFF64A3FFFF62A2FFFF61A1FFFF5F9FFFFF5C9DFFFF5A9A
+            FFFF5798FFFF5495FFFF5294FFFFFBF7F4FFCE9364FFFFFFFF00FFFFFF00EBBD
+            9BFFFBF7F4FF64A4FFFF79BDFFFF75BBFFFF71B9FFFF6DB8FFFF68B3FFFF61B0
+            FFFF5AABFFFF54A7FFFF3B7DFFFFFBF7F4FFD1976AFFFFFFFF00FFFFFF00ECBF
+            9EFFFBF7F4FF65A4FFFF64A3FFFF60A0FFFF5D9EFFFF5899FFFF5496FFFF4D90
+            FFFF478BFFFF4284FFFF3D7FFFFFFBF7F4FFD49B6FFFFFFFFF00FFFFFF00EEC1
+            A1EBFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7
+            F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFD7A074F8FFFFFF00FFFFFF00EFC2
+            A37EEFC1A2E3EDC09FFFEBBE9DFFEBBC9AFFE9BA96FFE7B793FFE6B590FFE4B2
+            8CFFE2AF88FFE0AC84FFDDA980FFDCA57DFFDAA37ACAFFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+          }
+          NumGlyphs = 0
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          MaxLength = 0
+          ParentFont = False
+          TabOrder = 14
+        end
+        object DateEdit4: TDateEdit
+          Left = 7
+          Height = 21
+          Top = 218
+          Width = 93
+          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+          OKCaption = 'OK'
+          CancelCaption = 'Cancel'
+          DateOrder = doNone
+          ButtonWidth = 23
+          CharCase = ecNormal
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D69E
+            72C4D3996EF4D19668FFCE9263FFCB8E5EFFC98A5BFFC78756FFC38452FFC384
+            52FFC38452FFC38452FFC38452FFC38452FFBB7742B0FFFFFF00FFFFFF00D7A1
+            75FFF8F2EDFFF7F0EAFFF6EDE6FFF4EAE2FFF3E7DEFFF1E4DBFFF0E2D8FFEAD6
+            C8FFF2E5DCFFFAF4F1FFF9F3F0FFFAF5F2FFC58A5DFDFFFFFF00FFFFFF00D9A4
+            7AFFF9F3EEFFEBD2BEFFFFFFFFFFEBD3BFFFFFFFFFFFEBD3C0FFFFFFFFFFEAC7
+            ADFFECD9CDFFF1E4DBFFF9F3F0FFF9F2EFFFC68C5FFFFFFFFF00FFFFFF00DDA8
+            7EFFF9F3EFFFEBD0BAFFEBD0BBFF75B57AFF75B57AFF75B57AFFEBD1BDFFEACD
+            B5FFFAF4F0FFEBD9CCFFF1E4DBFFFAF4F1FFC68A5CFFFFFFFF00FFFFFF00DFAA
+            82FFF9F3EFFFEACEB7FFFFFFFFFF75B57AFF94D49BFF74B579FFFFFFFFFFEACF
+            BAFFFBF6F2FFFAF3F0FFEBD8CBFFF2E6DDFFC88D5FFFFFFFFF00FFFFFF00E1AE
+            87FFFAF4F0FFEACBB2FFEACCB3FF75B57AFF74B579FF73B478FFEACEB7FF70B3
+            75FF6FB274FF6EB172FFE8C8AEFFEAD7C9FFC48654FFFFFFFF00FFFFFF00E3B1
+            8CFFFAF6F1FFEAC9AEFFFFFFFFFFEAC9B0FFFFFFFFFFE9CBB3FFFFFFFFFF6FB1
+            73FF8ED295FF6BAF6FFFFFFFFFFFF1E5DBFFC68655FFFFFFFF00FFFFFF00E5B4
+            8FFFFAF6F2FFE9C6AAFFE9C6ACFFEAC7ACFFE9C7ADFFE9C9AEFFE9C9B0FF6CB0
+            71FF6AAF6EFF68AD6DFFE8CCB5FFF2E7DEFFC88A59FFFFFFFF00FFFFFF00E7B7
+            94FFFBF7F4FFE9C3A6FFFFFFFFFFE8C4A9FFFFFFFFFFE9C6AAFFFFFFFFFFE8C7
+            ACFFFFFFFFFFE8C8B0FFFFFFFFFFF7F1EBFFCB8F5FFFFFFFFF00FFFFFF00E9BA
+            98FFFBF7F4FF65A4FFFF64A3FFFF62A2FFFF61A1FFFF5F9FFFFF5C9DFFFF5A9A
+            FFFF5798FFFF5495FFFF5294FFFFFBF7F4FFCE9364FFFFFFFF00FFFFFF00EBBD
+            9BFFFBF7F4FF64A4FFFF79BDFFFF75BBFFFF71B9FFFF6DB8FFFF68B3FFFF61B0
+            FFFF5AABFFFF54A7FFFF3B7DFFFFFBF7F4FFD1976AFFFFFFFF00FFFFFF00ECBF
+            9EFFFBF7F4FF65A4FFFF64A3FFFF60A0FFFF5D9EFFFF5899FFFF5496FFFF4D90
+            FFFF478BFFFF4284FFFF3D7FFFFFFBF7F4FFD49B6FFFFFFFFF00FFFFFF00EEC1
+            A1EBFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7
+            F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFD7A074F8FFFFFF00FFFFFF00EFC2
+            A37EEFC1A2E3EDC09FFFEBBE9DFFEBBC9AFFE9BA96FFE7B793FFE6B590FFE4B2
+            8CFFE2AF88FFE0AC84FFDDA980FFDCA57DFFDAA37ACAFFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+          }
+          NumGlyphs = 0
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          MaxLength = 0
+          ParentFont = False
+          TabOrder = 13
+        end
+        object Edit14: TEdit
+          Left = 8
+          Height = 21
+          Top = 104
+          Width = 56
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 4
+          Text = 'Edit14'
+        end
+      end
+      object GroupBox4: TGroupBox
+        Left = 372
+        Height = 120
+        Top = 370
+        Width = 350
+        ClientHeight = 102
+        ClientWidth = 346
+        TabOrder = 14
+        object Button6: TButton
+          Left = 46
+          Height = 17
+          Top = -2
+          Width = 243
+          Caption = 'Признаки учета'
+          OnClick = Button6Click
+          TabOrder = 0
+        end
+        object Memo1: TMemo
+          Left = 13
+          Height = 75
+          Top = 16
+          Width = 325
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Microsoft Sans Serif'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          Lines.Strings = (
+            'Memo1'
+          )
+          ParentFont = False
+          TabOrder = 1
+        end
+      end
+      object Edit1: TEdit
+        Left = 9
+        Height = 21
+        Top = 26
+        Width = 234
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+        Text = 'Edit1'
+      end
+      object ComboBox5: TComboBox
+        Left = 542
+        Height = 21
+        Top = 70
+        Width = 163
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Microsoft Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ItemHeight = 13
+        ParentFont = False
+        TabOrder = 9
+        Text = 'ComboBox5'
+      end
+      object Label35: TLabel
+        Left = 380
+        Height = 16
+        Top = 496
+        Width = 111
+        Caption = 'Дата снятия с учета:'
+        ParentColor = False
+      end
+      object DateEdit6: TDateEdit
+        Left = 378
+        Height = 21
+        Top = 515
+        Width = 85
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        OKCaption = 'OK'
+        CancelCaption = 'Cancel'
+        DateOrder = doNone
+        ButtonWidth = 23
+        CharCase = ecNormal
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D69E
+          72C4D3996EF4D19668FFCE9263FFCB8E5EFFC98A5BFFC78756FFC38452FFC384
+          52FFC38452FFC38452FFC38452FFC38452FFBB7742B0FFFFFF00FFFFFF00D7A1
+          75FFF8F2EDFFF7F0EAFFF6EDE6FFF4EAE2FFF3E7DEFFF1E4DBFFF0E2D8FFEAD6
+          C8FFF2E5DCFFFAF4F1FFF9F3F0FFFAF5F2FFC58A5DFDFFFFFF00FFFFFF00D9A4
+          7AFFF9F3EEFFEBD2BEFFFFFFFFFFEBD3BFFFFFFFFFFFEBD3C0FFFFFFFFFFEAC7
+          ADFFECD9CDFFF1E4DBFFF9F3F0FFF9F2EFFFC68C5FFFFFFFFF00FFFFFF00DDA8
+          7EFFF9F3EFFFEBD0BAFFEBD0BBFF75B57AFF75B57AFF75B57AFFEBD1BDFFEACD
+          B5FFFAF4F0FFEBD9CCFFF1E4DBFFFAF4F1FFC68A5CFFFFFFFF00FFFFFF00DFAA
+          82FFF9F3EFFFEACEB7FFFFFFFFFF75B57AFF94D49BFF74B579FFFFFFFFFFEACF
+          BAFFFBF6F2FFFAF3F0FFEBD8CBFFF2E6DDFFC88D5FFFFFFFFF00FFFFFF00E1AE
+          87FFFAF4F0FFEACBB2FFEACCB3FF75B57AFF74B579FF73B478FFEACEB7FF70B3
+          75FF6FB274FF6EB172FFE8C8AEFFEAD7C9FFC48654FFFFFFFF00FFFFFF00E3B1
+          8CFFFAF6F1FFEAC9AEFFFFFFFFFFEAC9B0FFFFFFFFFFE9CBB3FFFFFFFFFF6FB1
+          73FF8ED295FF6BAF6FFFFFFFFFFFF1E5DBFFC68655FFFFFFFF00FFFFFF00E5B4
+          8FFFFAF6F2FFE9C6AAFFE9C6ACFFEAC7ACFFE9C7ADFFE9C9AEFFE9C9B0FF6CB0
+          71FF6AAF6EFF68AD6DFFE8CCB5FFF2E7DEFFC88A59FFFFFFFF00FFFFFF00E7B7
+          94FFFBF7F4FFE9C3A6FFFFFFFFFFE8C4A9FFFFFFFFFFE9C6AAFFFFFFFFFFE8C7
+          ACFFFFFFFFFFE8C8B0FFFFFFFFFFF7F1EBFFCB8F5FFFFFFFFF00FFFFFF00E9BA
+          98FFFBF7F4FF65A4FFFF64A3FFFF62A2FFFF61A1FFFF5F9FFFFF5C9DFFFF5A9A
+          FFFF5798FFFF5495FFFF5294FFFFFBF7F4FFCE9364FFFFFFFF00FFFFFF00EBBD
+          9BFFFBF7F4FF64A4FFFF79BDFFFF75BBFFFF71B9FFFF6DB8FFFF68B3FFFF61B0
+          FFFF5AABFFFF54A7FFFF3B7DFFFFFBF7F4FFD1976AFFFFFFFF00FFFFFF00ECBF
+          9EFFFBF7F4FF65A4FFFF64A3FFFF60A0FFFF5D9EFFFF5899FFFF5496FFFF4D90
+          FFFF478BFFFF4284FFFF3D7FFFFFFBF7F4FFD49B6FFFFFFFFF00FFFFFF00EEC1
+          A1EBFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7
+          F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFD7A074F8FFFFFF00FFFFFF00EFC2
+          A37EEFC1A2E3EDC09FFFEBBE9DFFEBBC9AFFE9BA96FFE7B793FFE6B590FFE4B2
+          8CFFE2AF88FFE0AC84FFDDA980FFDCA57DFFDAA37ACAFFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+        }
+        NumGlyphs = 0
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 15
+      end
+      object Label36: TLabel
+        Left = 508
+        Height = 16
+        Top = 496
+        Width = 46
+        Caption = 'Label36'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clPurple
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button7: TButton
+        Left = 12
+        Height = 32
+        Top = 504
+        Width = 80
+        Caption = 'Сохранить'
+        Color = clInfoBk
+        Font.Color = clLime
+        OnClick = Button7Click
+        ParentFont = False
+        TabOrder = 16
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Мероприятия'
+      ClientHeight = 541
+      ClientWidth = 740
+      object DBGrid1: TDBGrid
+        Left = 4
+        Height = 514
+        Top = 2
+        Width = 729
+        Color = clWindow
+        Columns = <>
+        DataSource = Datasource1
+        TabOrder = 0
+      end
+      object Label33: TLabel
+        Left = 5
+        Height = 17
+        Top = 525
+        Width = 51
+        Caption = 'Label33'
+        Color = clActiveBorder
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        Transparent = False
+      end
+      object Button8: TButton
+        Left = 244
+        Height = 21
+        Top = 521
+        Width = 92
+        Caption = 'Добавить'
+        OnClick = Button8Click
+        TabOrder = 1
+      end
+      object Button9: TButton
+        Left = 372
+        Height = 19
+        Top = 521
+        Width = 91
+        Caption = 'Исправить'
+        OnClick = Button9Click
+        TabOrder = 2
+      end
+      object Button10: TButton
+        Left = 500
+        Height = 19
+        Top = 521
+        Width = 78
+        Caption = 'Скопировать'
+        OnClick = Button10Click
+        TabOrder = 3
+      end
+      object Button11: TButton
+        Left = 625
+        Height = 18
+        Top = 522
+        Width = 108
+        Caption = 'Удалить'
+        OnClick = Button11Click
+        TabOrder = 4
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Прописка'
+      ClientHeight = 541
+      ClientWidth = 740
+      object DBGrid2: TDBGrid
+        Left = 8
+        Height = 375
+        Top = 11
+        Width = 714
+        Color = clWindow
+        Columns = <>
+        DataSource = Datasource1
+        TabOrder = 0
+      end
+      object Button12: TButton
+        Left = 27
+        Height = 22
+        Top = 464
+        Width = 124
+        Caption = 'Добавить'
+        OnClick = Button12Click
+        TabOrder = 1
+      end
+      object Button13: TButton
+        Left = 232
+        Height = 22
+        Top = 464
+        Width = 140
+        Caption = 'Исправить'
+        OnClick = Button13Click
+        TabOrder = 2
+      end
+      object Button14: TButton
+        Left = 460
+        Height = 22
+        Top = 464
+        Width = 127
+        Caption = 'Удалить'
+        OnClick = Button14Click
+        TabOrder = 3
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Семья'
+      ClientHeight = 541
+      ClientWidth = 740
+      object ListBox1: TListBox
+        Left = 15
+        Height = 152
+        Top = 50
+        Width = 573
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ItemHeight = 0
+        OnClick = ListBox1Click
+        OnDblClick = ListBox1DBLClick
+        ParentFont = False
+        TabOrder = 0
+      end
+      object Label34: TLabel
+        Left = 20
+        Height = 16
+        Top = 18
+        Width = 390
+        Caption = '№ п/п  Проживает     Статус Дата рождения     Фамилия, имя, отчество'
+        ParentColor = False
+      end
+      object Button15: TButton
+        Left = 108
+        Height = 28
+        Top = 221
+        Width = 101
+        Caption = 'Добавить'
+        OnClick = Button15Click
+        TabOrder = 1
+      end
+      object Button16: TButton
+        Left = 340
+        Height = 28
+        Top = 221
+        Width = 93
+        Caption = 'Удалить'
+        OnClick = Button16Click
+        TabOrder = 2
+      end
+    end
+  end
+  object Button17: TButton
+    Left = 551
+    Height = 25
+    Top = 4
+    Width = 155
+    Caption = 'Изменить группу учета'
+    OnClick = Button17Click
+    TabOrder = 1
+  end
+  object Dzap: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    UpdateMode = upWhereChanged
+    UsePrimaryKeyAsKey = False
+    left = 176
+    top = 592
+  end
+  object Dyn: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    left = 120
+    top = 592
+  end
+  object Datasource1: TDatasource
+    DataSet = Dzap
+    left = 225
+    top = 592
+  end
+  object Dmer: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    left = 272
+    top = 592
+  end
+  object MainMenu1: TMainMenu
+    left = 9
+    top = 4
+    object MenuItem1: TMenuItem
+      Caption = 'Печать'
+      OnClick = MenuItem1Click
+      object MenuItem6: TMenuItem
+        Caption = 'Индивидуальная карта'
+        OnClick = MenuItem6Click
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Заявление о регистрации'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Листок прибытия'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Справка по месту требования'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Заявление о запросе пенсионного дела'
+        OnClick = MenuItem8Click
+      end
+      object MenuItem7: TMenuItem
+        Caption = 'Договор на платные услуги'
+        OnClick = MenuItem7Click
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Уведомление о прибытии иностранного гражданина'
+        OnClick = MenuItem9Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Печать карточки (старая)'
+        OnClick = MenuItem5Click
+      end
+    end
+  end
+  object Process1: TProcess
+    Active = False
+    Options = []
+    Priority = ppNormal
+    StartupOptions = []
+    ShowWindow = swoNone
+    WindowColumns = 0
+    WindowHeight = 0
+    WindowLeft = 0
+    WindowRows = 0
+    WindowTop = 0
+    WindowWidth = 0
+    FillAttribute = 0
+    left = 333
+    top = 591
+  end
+end

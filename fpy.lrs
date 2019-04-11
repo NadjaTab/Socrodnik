@@ -1,0 +1,14 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFrmPY','FORMDATA',[
+  'TPF0'#6'TFrmPY'#5'FrmPY'#4'Left'#3'n'#1#6'Height'#3#241#0#3'Top'#3#25#1#5'Wi'
+  +'dth'#3#217#1#7'Caption'#6'%'#208#154#208#176#209#130#208#181#208#179#208#190
+  +#209#128#208#184#208#184' '#208#189#208#176#209#129#208#181#208#187#208#181
+  +#208#189#208#184#209#143#12'ClientHeight'#3#241#0#11'ClientWidth'#3#217#1#7
+  +'OnClose'#7#9'FormClose'#6'OnShow'#7#8'FormShow'#10'LCLVersion'#6#8'0.9.30.3'
+  +#0#8'TListBox'#8'ListBox1'#4'Left'#2#8#6'Height'#3#190#0#3'Top'#2#14#5'Width'
+  +#3#201#1#10'ItemHeight'#2#0#7'OnClick'#7#13'ListBox1Click'#8'TabOrder'#2#0#0
+  +#0#9'TSQLQuery'#4'Dzap'#9'FieldDefs'#14#0#8'Database'#7#22'FrmLogin.PQConnec'
+  +'tion1'#11'Transaction'#7#24'FrmLogin.SQLTransaction1'#6'Params'#14#0#10'Dat'
+  +'aSource'#7#19'FrmKuch.Datasource1'#4'left'#2#24#3'top'#3#212#0#0#0#0
+]);

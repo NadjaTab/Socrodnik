@@ -1,0 +1,129 @@
+object FrmSplash: TFrmSplash
+  Left = 454
+  Height = 394
+  Top = 311
+  Width = 580
+  Caption = 'Адресная социальная помощь'
+  ClientHeight = 394
+  ClientWidth = 580
+  LCLVersion = '1.0.10.0'
+  object Label1: TLabel
+    Left = 11
+    Height = 17
+    Top = 12
+    Width = 204
+    Caption = 'Лицензия предоставлена:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 152
+    Height = 23
+    Top = 40
+    Width = 277
+    Caption = 'ГЦСПН  "  Родник"   г.Красноярск'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 72
+    Height = 37
+    Top = 120
+    Width = 436
+    Caption = 'Адресная социальная помощь'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -32
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 240
+    Height = 18
+    Top = 240
+    Width = 308
+    Caption = 'Автор: Минчакова Надежда Викторовна'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 448
+    Height = 17
+    Top = 272
+    Width = 100
+    Caption = 'р.тел. 258-63-76'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 369
+    Height = 17
+    Top = 312
+    Width = 177
+    Caption = 'Версия 5.0 (Build 02)    2013г.'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 246
+    Height = 17
+    Top = 352
+    Width = 78
+    Caption = 'г.Красноярск'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 34
+    Height = 35
+    Top = 309
+    Width = 118
+    Caption = 'ОК'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end

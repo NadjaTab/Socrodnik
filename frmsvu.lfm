@@ -1,0 +1,176 @@
+object FSVU: TFSVU
+  Left = 305
+  Height = 578
+  Top = 212
+  Width = 623
+  Caption = 'Сведения о гражданах, стоящих на учете'
+  ClientHeight = 578
+  ClientWidth = 623
+  OnCreate = FormCreate
+  LCLVersion = '1.0.10.0'
+  object DBGrid1: TDBGrid
+    Left = 48
+    Height = 376
+    Top = 32
+    Width = 487
+    Color = clWindow
+    Columns = <>
+    DataSource = Datasource1
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 48
+    Height = 27
+    Top = 425
+    Width = 105
+    Caption = 'Карточка учета'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 48
+    Height = 27
+    Top = 462
+    Width = 106
+    Caption = 'Запись в архив'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 200
+    Height = 25
+    Top = 464
+    Width = 122
+    Caption = 'Снятие с учета'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 371
+    Height = 27
+    Top = 425
+    Width = 122
+    Caption = 'Поиск по фамилии'
+    OnClick = Button4Click
+    TabOrder = 4
+  end
+  object Button5: TButton
+    Left = 200
+    Height = 27
+    Top = 425
+    Width = 124
+    Caption = 'Условия отбора'
+    OnClick = Button5Click
+    TabOrder = 5
+  end
+  object Button6: TButton
+    Left = 48
+    Height = 28
+    Top = 504
+    Width = 104
+    Caption = 'Печать списка'
+    OnClick = Button6Click
+    TabOrder = 6
+  end
+  object Button7: TButton
+    Left = 512
+    Height = 26
+    Top = 464
+    Width = 82
+    Caption = 'Удалить'
+    OnClick = Button7Click
+    TabOrder = 7
+  end
+  object Button8: TButton
+    Left = 160
+    Height = 28
+    Top = 504
+    Width = 216
+    Caption = 'Печать списка с местом жительства'
+    OnClick = Button8Click
+    TabOrder = 8
+  end
+  object Button9: TButton
+    Left = 384
+    Height = 29
+    Top = 504
+    Width = 216
+    Caption = 'Печать списка с отм. о регистрации'
+    OnClick = Button9Click
+    TabOrder = 9
+  end
+  object Button10: TButton
+    Left = 48
+    Height = 25
+    Top = 543
+    Width = 223
+    Caption = 'Печать списка по дате поступления'
+    OnClick = Button10Click
+    TabOrder = 10
+  end
+  object Button11: TButton
+    Left = 371
+    Height = 24
+    Top = 464
+    Width = 117
+    Caption = 'Добавить карточку'
+    OnClick = Button11Click
+    TabOrder = 11
+  end
+  object Datasource1: TDatasource
+    DataSet = SQLQuery1
+    left = 568
+    top = 376
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    UpdateMode = upWhereChanged
+    left = 567
+    top = 320
+  end
+  object Dzap: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    UpdateMode = upWhereChanged
+    left = 568
+    top = 432
+  end
+  object Dsdv: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    UpdateMode = upWhereChanged
+    left = 568
+    top = 264
+  end
+  object DF1: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    left = 568
+    top = 216
+  end
+  object Process1: TProcess
+    Active = False
+    Options = []
+    Priority = ppNormal
+    StartupOptions = []
+    ShowWindow = swoNone
+    WindowColumns = 0
+    WindowHeight = 0
+    WindowLeft = 0
+    WindowRows = 0
+    WindowTop = 0
+    WindowWidth = 0
+    FillAttribute = 0
+    left = 567
+    top = 152
+  end
+end
