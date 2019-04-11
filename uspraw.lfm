@@ -1,0 +1,35 @@
+object FrmSprav: TFrmSprav
+  Left = 322
+  Height = 429
+  Top = 161
+  Width = 569
+  Caption = 'Справочники'
+  ClientHeight = 429
+  ClientWidth = 569
+  OnShow = FormShow
+  LCLVersion = '0.9.30.3'
+  object ListBox1: TListBox
+    Left = 20
+    Height = 394
+    Top = 16
+    Width = 524
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    OnClick = ListBox1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Dzap: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    UsePrimaryKeyAsKey = False
+    left = 8
+    top = 384
+  end
+end

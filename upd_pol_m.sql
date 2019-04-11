@@ -1,0 +1,1 @@
+UPDATE "F2" SET "POL"=1  WHERE "OTCH" NOT LIKE '%Õ¿'

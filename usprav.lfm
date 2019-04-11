@@ -1,0 +1,106 @@
+object fsprav: Tfsprav
+  Left = 410
+  Height = 549
+  Top = 188
+  Width = 817
+  Caption = 'Справочник'
+  ClientHeight = 549
+  ClientWidth = 817
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.0.10.0'
+  object DBGrid1: TDBGrid
+    Left = 16
+    Height = 479
+    Top = 17
+    Width = 632
+    Color = clWindow
+    Columns = <>
+    DataSource = Datasource1
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 568
+    Height = 28
+    Top = 506
+    Width = 82
+    Caption = 'Выбрать'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 23
+    Top = 506
+    Width = 384
+    OnChange = Edit1Change
+    TabOrder = 2
+    Text = 'Edit1'
+  end
+  object Button2: TButton
+    Left = 696
+    Height = 29
+    Top = 24
+    Width = 76
+    Caption = 'Добавить'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 696
+    Height = 29
+    Top = 80
+    Width = 76
+    Caption = 'Удалить'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 696
+    Height = 24
+    Top = 136
+    Width = 76
+    Caption = 'Исправить'
+    OnClick = Button4Click
+    TabOrder = 5
+  end
+  object Button5: TButton
+    Left = 664
+    Height = 24
+    Top = 192
+    Width = 138
+    Caption = 'Уволить/Вернуть'
+    OnClick = Button5Click
+    TabOrder = 6
+  end
+  object Button6: TButton
+    Left = 666
+    Height = 23
+    Top = 233
+    Width = 136
+    Caption = 'Изменить пароль '
+    OnClick = Button6Click
+    TabOrder = 7
+  end
+  object Datasource1: TDatasource
+    DataSet = Dzap
+    left = 652
+    top = 384
+  end
+  object Dzap: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    left = 652
+    top = 432
+  end
+  object POISK: TSQLQuery
+    FieldDefs = <>
+    Database = FrmLogin.PQConnection1
+    Transaction = FrmLogin.SQLTransaction1
+    Params = <>
+    left = 652
+    top = 336
+  end
+end
